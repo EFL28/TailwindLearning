@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mx-auto px-4">
+        <header class="text-center sm:text-left bg-orange-300 md:bg-blue-300 lg:bg-green-600 p-4">Header</header>
+
+        <div class="flex flex-col md:flex-row md:justify-between space-y-4 md:space-y-0 mt-2">
+            <div class="flex-1 h-60 bg-red-500 p-4 justify-center lg:text-center text-left font-bold">1</div>
+            <div class="flex-1 h-60 bg-blue-400 md:bg-red-500 p-4 justify-center lg:text-center md:text-right font-bold">2</div>
+            <!-- Mobile -->
+            <div class="flex-1 bg-red-500 h-60 p-4 text-center font-bold hidden md:hidden lg:block">3</div>
+        </div>
+
+        <!-- Tablet -->
+        <div class="bg-green-600 h-60 p-4 text-center font-bold hidden md:block lg:hidden">3</div>
+
+        <!-- PC -->
+        <div class="flex-1 mt-4 bg-red-500 p-4 justify-center text-right font-bold md:hidden">3</div>
+
+        <footer class="flex flex-col md:flex-col justify-between bg-yellow-300 p-4 mt-2 lg:flex-row"> <!-- Añadida la clase md:flex-col y lg:flex-row -->
+            <div class="flex-1 text-center lg:text-right mb-1">Footer 1</div>
+            <div class="flex-1 text-center lg:text-left">Footer 2</div>
+        </footer>
+    </div>
+</body>
+
+
+</html>

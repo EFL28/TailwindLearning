@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Home - Nonprofit</title>
+    <script src="https://kit.fontawesome.com/7c07d47081.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="flex flex-col min-h-screen font-sans bg-main-color text-gray-800">
+    <header class="bg-cover bg-center p-6 text-center md:flex md:items-center md:justify-between">
+        <h1 class="text-5xl mb-4">Welcome to Our Nonprofit</h1>
+
+        <nav class="text-lg mb-4 md:mb-0">
+            <a href="#" class="text-black hover:text-gray-500 mx-4">Home</a>
+            <a href="about.html" class="text-black hover:text-gray-500 mx-4">About Us</a>
+            <a href="contact.html" class="text-black hover:text-gray-500 mx-4">Contact</a>
+        </nav>
+
+        <!-- Toggle website theme (Light/Dark)-->
+        <div class="flex flex-col justify-center md:self-end">
+            <input type="checkbox" name="light-switch" id="light-switch" class="light-switch sr-only" />
+            <label class="relative cursor-pointer p-2" for="light-switch">
+                <div class="fill-current text-slate-300 dark:hidden" width="16" height="16">
+                    <i class="fa-regular fa-sun"></i>
+                </div>
+                
+                <div class=" fill-current text-slate-400 hidden dark:block" width="16" height="16">
+                    <i class="fa-regular fa-moon"></i>
+                </div>
+                
+                <span class="sr-only">Switch to light / dark version</span>
+            </label>
+        </div>
+    </header>
+
+
+    <main class="flex-grow p-10">
+        <section class="mb-10">
+            <h2 class="font-semibold mb-5">Our Mission</h2>
+            <p class="text-xl">Discover the mission and goals of our nonprofit organization.</p>
+        </section>
+        <section class="mb-10">
+            <h2 class="font-semibold mb-5">Get Involved</h2>
+            <p class="text-xl">Find out how you can support and engage with our organization.</p>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-6 relative bottom-0 left-0 right-0">
+        <p class="mb-2">&copy; 2023 Nonprofit. All rights reserved.</p>
+        <div>
+            <a href="#" class="text-white hover:text-red-300 mx-2">Facebook</a>
+            <a href="#" class="text-white hover:text-red-300 mx-2">Twitter</a>
+            <a href="#" class="text-white hover:text-red-300 mx-2">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="../src/js/app.js"></script>
+</body>
+
+</html>
